@@ -31,12 +31,13 @@ p {
   height: 200px;
   object-fit: cover;
   object-position: 75% 50%;
+  box-shadow: 1px, 3px ;
 }
 .card-design {
   background: rgb(230, 230, 220);
   padding: 30px;
   border-radius: 4px;
-  box-shadow: 0, 10px, 30px rgba(0,0,0,.1);
+  box-shadow: 2px, 2px, 3px rgba(0,0,0,0.9);
   width: 600px;
   margin: 15px auto;
 }
@@ -51,21 +52,25 @@ p {
   background: rgb(230, 230, 220);
   padding: 30px;
   border-radius: 4px;
-  box-shadow: 0, 10px, 30px rgba(0,0,0,.1);
+  box-shadow: 2px, 2px, 3px rgba(0,0,0,0.9);
   width: 300px;
   margin: 15px;
   text-decoration: underline;
 }
 
 .card-small a {
+  position: relative;
+  top: 0;
   text-decoration: none;
   color: rgb(45, 45, 40);
   opacity: 0.9;
   font-size: 40px;
+  transition: top, ease 0.5s;
 }
 .card-small a:hover {
   color: rgb(140, 100, 140);
   transition-duration: 0.5s;
+  top: -20px
 }
 
 
@@ -85,13 +90,17 @@ ul li {
 
 ul li a {
   text-decoration: none;
+  position: relative;
+  top: 0;
   color: rgb(45, 45, 40);
   opacity: 0.9;
+  transition: top, ease 0.5s;
 }
 
 ul li a:hover{
   color: rgb(140, 100, 140);
   transition-duration: 0.5s;
+  top: -20px
 }
 
 @media (max-width: 960px) {
